@@ -71,7 +71,7 @@ class convert:
             'Cookie': cookie
         }
         response = r.get('https://web.facebook.com/ads/manager/account_settings/account_billing/?_rdc=1&_rdr', headers = headers)
-        find = re.findall('(EAAA\w+)', response.text)
+        find = re.search('(EAAA\w+)', response.text).group(1)
         if len(find) == 0:
           exit(f"{MERAH}!.{MERAH} Token tidak ditemukan")
         else:
