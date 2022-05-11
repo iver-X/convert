@@ -9,8 +9,10 @@ figlet Loading...
 pip install bs4
 clear
 figlet Loading...
+gem install lolcat
+clear
+figlet Loading...
 pip install uncompyle6
 clear
-figlet sukses
-date|
-Masukan perintah python Convert.py
+figlet sukses|lolcat
+date|lolcat
