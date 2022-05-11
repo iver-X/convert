@@ -42,7 +42,7 @@ class convert:
       else:
         exit(f"{MERAH}!.{MERAH} Periksa cookienya")
     elif masuk == '4' or masuk == '04':
-      print(f"{KUNING}?.{PUTIH} Anda akan diarahkan ke youtube...");time.sleep(3);os.system('xdg-open ');exit()
+      print(f"{KUNING}?.{PUTIH} Anda akan diarahkan ke youtube...");time.sleep(3);os.system('xdg-open https://youtube.com/channel/UCTuJ142jrkZxS_QnkttTMNQ');exit()
     elif masuk == '5' or masuk == '05':
       exit()
     else:
