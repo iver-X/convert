@@ -12,7 +12,7 @@ O = ('\x1b[1;96m')
 N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
 # Banner
-banner = (f"""      ㅤㅤㅤㅤㅤㅤㅤㅤㅤ  {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
+banner = (f"""      ㅤㅤㅤㅤㅤㅤㅤㅤ {KUNING}{KUNING}[SELAMAT DATANG SAYANG]{KUNING}{KUNING}
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
