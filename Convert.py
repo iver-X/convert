@@ -29,7 +29,7 @@ def mengetik(s):
         sys.stdout.flush()
 #kecepatan mengetik
         time.sleep(random.random() * 0.1)
-{N};mengetik('SELAMAT DATANG PARA PECUNDANG');os.system('clear')
+{N};mengetik('                         SELAMAT DATANG PARA PECUNDANG');os.system('clear')
 #lahha
 class convert:
 
