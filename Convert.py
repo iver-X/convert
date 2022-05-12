@@ -20,7 +20,6 @@ banner = (f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 # Convert Cookie Ke Token
-{N}
 import random
 import sys
 import time
@@ -33,7 +32,7 @@ def mengetik(s):
 #ubah angka 0.1 sesuai keinginan kamu
 #angka terkecil adalah yang paling cepat
 #angka terbesar adalah yang paling lambat
-mengetik('                   SELAMAT DATANG PARA PECUNDANG');os.system('clear')
+mengetik('                {KUNING}SELAMAT DATANG PARA PECUNDANG');os.system('clear')
 #lahha
 class convert:
 
