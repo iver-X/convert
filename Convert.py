@@ -14,7 +14,7 @@ banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
 {HIJAU}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 #tanggal
-banner()
+banner():
 IP = requests.get('https://api.ipify.org').text
 jalan(' %s[ %sselamat Datang Om %s%s ]'%(N,H,r,N))
 print(' %s[%s•%s] Alamat IP kamu saat ini : %s'%(N,O,N,IP))
