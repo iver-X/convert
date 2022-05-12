@@ -20,7 +20,7 @@ class menu:
                self.uid = []
            def main(self):
                  os.system('clear')
-banner = str(response.text)
+banner = (response.text)
 IP = requests.get('https://api.ipify.org').text
 jalan('[ selamat Datang Om  ]')
 print("*ALAMAT IP KAMU SAAT INI:IP")
