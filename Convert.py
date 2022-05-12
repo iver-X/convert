@@ -64,7 +64,7 @@ class convert:
         response = r.get('https://web.facebook.com/ads/manager/account_settings/account_billing/?_rdc=1&_rdr', headers = headers)
         find = re.findall('(EAAI\w+)', response.text)
         if len(find) == 0:
-          masuk input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+          masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for token in find:
@@ -81,7 +81,7 @@ class convert:
         response = r.get('https://web.facebook.com/ads/manager/account_settings/account_billing/?_rdc=1&_rdr', headers = headers)
         find = re.findall('(EAAA\w+)', response.text)
         if len(find) == 0:
-          masuk input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+          masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for token in find:
@@ -98,7 +98,7 @@ class convert:
         respon = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
         find = re.findall('act=(.*?)&nav_source', respon.text)
         if len(find) == 0:
-          masuk input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+          masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for y in find:
