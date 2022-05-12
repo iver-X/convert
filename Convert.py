@@ -79,7 +79,7 @@ class convert:
             'Cookie': cookie
         }
         response = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
-     find = re.findall('act=(.*?)&nav_source', respon.text):
+     find = re.findall('act=(.*?)&nav_source', respon.text).group(1)
         if len(find) == 0:
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
