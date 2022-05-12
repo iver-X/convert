@@ -12,7 +12,7 @@ O = ('\x1b[1;96m')
 N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
 # Banner
-banner = (f"""        {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
+banner = (f"""      ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ  {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
@@ -22,13 +22,13 @@ class convert:
 
   def __init__(self):
     os.system('clear')
-    print(f"""{banner}
+    print(f"""{banner}{BIRU}
 ㅤㅤㅤㅤㅤ==================================================
 {HIJAU}ㅤㅤㅤㅤㅤ[•]1.{J} Mendapatkan token EAAIㅤㅤㅤㅤㅤㅤㅤ
-{HIJAU}ㅤㅤㅤㅤㅤ[•]2.{N} Dapatkan token EAABㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+{HIJAU}ㅤㅤㅤㅤㅤ[•]2.{KUNING} Dapatkan token EAABㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 {HIJAU}ㅤㅤㅤㅤㅤ[•]3.{O} Dapatkan token EAAAㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 {HIJAU}ㅤㅤㅤㅤㅤ[•]4.{U} Cara menggunakanㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-{HIJAU}ㅤㅤㅤㅤㅤ[•]5.{J} Keluar {MERAH}(exit){MERAH}ㅤㅤㅤㅤ
+{HIJAU}ㅤㅤㅤㅤㅤ[•]5.{J} Keluar {MERAH}(exit){MERAH}{BIRU}
 ㅤㅤㅤㅤㅤ==================================================
        """)
     masuk = input(f"{KUNING}?.{U} Choose :{HIJAU} ")
