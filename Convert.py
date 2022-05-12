@@ -31,23 +31,23 @@ class convert:
 {HIJAU}ㅤㅤㅤㅤㅤ[•]{K}5.{J} Keluar {MERAH}(exit){MERAH}{BIRU}
 ㅤㅤㅤㅤㅤ==================================================
        """)
-    masuk = input(f"{KUNING}?.{U} Choose :{HIJAU} ")
+    masuk = input(f"{KUNING}?.{U} [?]{J}PILIH:{HIJAU} ")
     if masuk == '1' or masuk == '01':
-      cookie = input(f"\n{HIJAU}?.{U} Cookie :{KUNING} ")
+      cookie = input(f"\n{HIJAU}?.{U} [!]{J}masukan Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__satu__(cookie)
       else:
         masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '2' or masuk == '02':
-      cookie = input(f"\n{HIJAU}?.{U} Cookie :{KUNING} ")
+      cookie = input(f"\n{HIJAU}?.{U} [!]{J}masukan Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__dua__(cookie)
       else:
         masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '3' or masuk == '03':
-      cookie = input(f"\n{HIJAU}?.{U} Cookie :{KUNING} ")
+      cookie = input(f"\n{HIJAU}?.{U} [!]{J}masukan Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__tiga__(cookie)
       else:
@@ -70,11 +70,11 @@ class convert:
         response = r.get('https://web.facebook.com/ads/manager/account_settings/account_billing/?_rdc=1&_rdr', headers = headers)
         find = re.findall('(EAAI\w+)', response.text)
         if len(find) == 0:
-          masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+          masuk = input(f"""{MERAH}[×]{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for token in find:
-            print(f"\n{KUNING}?.{O} Your token :{HIJAU} {token}")
+            print(f"\n{KUNING}?.{O} [✓]Token Kamu :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
   def __tiga__(self,cookie):
@@ -87,11 +87,11 @@ class convert:
         response = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
         find = re.findall('(EAAA)\w+', (response.text))
         if len(find) == 0:
-          masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+          masuk = input(f"""{MERAH}[×]{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
         else:
           for token in find:
-            print(f"\n{KUNING}?.{O} Your token :{HIJAU} {token}")
+            print(f"\n{KUNING}?.{O} [✓] Token Kamu :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
   def __dua__(self,cookie):
@@ -104,13 +104,13 @@ class convert:
         respon = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
         find = re.findall('act=(.*?)&nav_source', respon.text)
         if len(find) == 0:
-          masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+          masuk = input(f"""{MERAH}[×]{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for y in find:
             response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
             token = re.search('(EAAB\w+)', response.text).group(1)
-            print(f"\n{KUNING}?.{O} Your token :{HIJAU} {token}")
+            print(f"\n{KUNING}?.{O} [✓]Token Kamu :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
 
