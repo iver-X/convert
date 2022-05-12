@@ -14,12 +14,17 @@ banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
 {HIJAU}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 #tanggal
-banner('''
+def __init__(self):
+		self.uid = []
+	def main(self):
+		os.system('clear')
+		try:
+banner()
 IP = requests.get('https://api.ipify.org').text
 jalan('[ selamat Datang Om  ]')
 print('[•] Alamat IP kamu saat ini : 'IP)
 print('[•] Kamu masuk pada         : 'waktu)
-print()''')
+print()
 # Convert Cookie Ke Token
 class convert:
 
