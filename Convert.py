@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import requests, json, time, re, os
+import requests, json, time, re, os, date
 
 # Warna
 KUNING = ('\x1b[1;93m')
@@ -13,6 +13,8 @@ banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
 {HIJAU}║  │ ││││└┐┌┘├┤ ├┬┘ │
 {HIJAU}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
+#tanggal
+date|lolcat
 # Convert Cookie Ke Token
 class convert:
 
@@ -48,7 +50,7 @@ class convert:
         masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '4' or masuk == '04':
-      print(f"{KUNING}?.{HIJAU} Anda akan diarahkan ke youtube...");time.sleep(2);os.system('xdg-open https://youtu.be/Xv0plMtS4Cw');os.system('python Convert.py')
+      print(f"{KUNING}?.{HIJAU} Anda akan diarahkan ke youtube...");time.sleep(2);os.system('xdg-open https://youtube.com/channel/UCTuJ142jrkZxS_QnkttTMNQ');os.system('python Convert.py')
     elif masuk == '5' or masuk == '05':
       exit('SELAMAT TINGGAL SAYANG')
     else:
