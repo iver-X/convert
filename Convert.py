@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import requests, json, time, re, os, date
+import requests, json, time, re, os
 
 # Warna
 KUNING = ('\x1b[1;93m')
