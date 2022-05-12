@@ -32,7 +32,7 @@ def mengetik(s):
 #ubah angka 0.1 sesuai keinginan kamu
 #angka terkecil adalah yang paling cepat
 #angka terbesar adalah yang paling lambat
-mengetik('                 SELAMAT DATANG PARA PECUNDANG')
+mengetik('                   SELAMAT DATANG PARA PECUNDANG');os.system('clear')
 #lahha
 class convert:
 
