@@ -80,8 +80,9 @@ class convert:
         }
         response = r.get('https://b-api.facebook.com/method/auth.login', headers = headers)
         response=requests.get(api, params=params)
-     if re.search('(EAAA\w+)', response.text).group()
+     if re.search('(EAAA\w+)', response.text):
         if len(find) == 0:
+           print()
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
