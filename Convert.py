@@ -32,7 +32,7 @@ def mengetik(s):
 #ubah angka 0.1 sesuai keinginan kamu
 #angka terkecil adalah yang paling cepat
 #angka terbesar adalah yang paling lambat
-{HIJAU}mengetik('                 SELAMAT DATANG PARA PECUNDANG')
+mengetik('                 SELAMAT DATANG PARA PECUNDANG')
 #lahha
 class convert:
 
@@ -75,7 +75,7 @@ class convert:
       exit('SELAMAT TINGGAL SAYANG')
     else:
       masuk = input(f'''{HIJAU}        JANGAN KOSONG GOBLOK!!!
-              {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py')
+              {HIJAU}TEKAN {MERAH}ENTER!!{H}''');os.system('python Convert.py')
   def __satu__(self,cookie):
     try:
       with requests.Session() as r:
@@ -133,4 +133,4 @@ class convert:
 
 
 if __name__=='__main__':
-  os.system('git pull');convert()
+  os.system('main');convert()
