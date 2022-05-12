@@ -86,7 +86,7 @@ class convert:
         else:
           for y in find:
             response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
-            token = re.search('(EAAA)\w+', str(response.text))
+            token = re.findall('(EAAA)\w+', str(response.text))
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
