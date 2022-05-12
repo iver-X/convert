@@ -13,16 +13,13 @@ N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
 
 #banner
+os.system('clear')
 banner = (f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 # Convert Cookie Ke Token
-class convert:
-
-  def __init__(self):
-    os.system('clear')
 import random
 import sys
 import time
@@ -36,6 +33,10 @@ def mengetik(s):
 #angka terkecil adalah yang paling cepat
 #angka terbesar adalah yang paling lambat
 mengetik('SELAMAT DATANG PARA PECUNDANG')
+#lahha
+class convert:
+
+  def __init__(self):
     print(f"""{banner}
             {H}           https://github.com/iver-X{B}
 ㅤㅤㅤㅤㅤ==================================================
