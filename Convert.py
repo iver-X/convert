@@ -28,7 +28,8 @@ def mengetik(s):
         sys.stdout.write(c)
         sys.stdout.flush()
 #kecepatan mengetik
-        time.sleep(random.random() * 0.1);('\x1b[0m');mengetik('SELAMAT DATANG PARA PECUNDANG')
+        time.sleep(random.random() * 0.1)
+('\x1b[0m');mengetik('SELAMAT DATANG PARA PECUNDANG')
 #lahha
 class convert:
 
