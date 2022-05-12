@@ -82,8 +82,6 @@ class convert:
         response=requests.get(api, params=params)
       if re.search('(EAAA)\w+', str(response.text)):
         if len(find) == 0:
-          break
-          except:pass
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
