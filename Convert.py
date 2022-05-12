@@ -20,6 +20,7 @@ banner = (f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 # Convert Cookie Ke Token
+{N}
 import random
 import sys
 import time
