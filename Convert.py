@@ -24,9 +24,9 @@ class convert:
     os.system('clear')
     print(f"""{banner}
 {HIJAU}1.{J} Mendapatkan token EAAI
-{HIJAU}2.{J} Dapatkan token EAAB
-{HIJAU}3.{J} Dapatkan token EAAA
-{HIJAU}4.{J} Cara menggunakan
+{HIJAU}2.{N} Dapatkan token EAAB
+{HIJAU}3.{O} Dapatkan token EAAA
+{HIJAU}4.{U} Cara menggunakan
 {HIJAU}5.{J} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
    """)
     masuk = input(f"{KUNING}?.{U} Choose :{HIJAU} ")
@@ -57,7 +57,7 @@ class convert:
       exit('SELAMAT TINGGAL SAYANG')
     else:
       masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');time.sleep(3);menu().main;os.system('python Convert.py')
+{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py')
   def __satu__(self,cookie):
     try:
       with requests.Session() as r:
