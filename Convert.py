@@ -129,4 +129,8 @@ class convert:
             print(f"\n{KUNING}{O}     [✓]Token Kamu :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
-     main()
+    
+
+
+if __name__=='__main__':
+  os.system('clear');convert()
