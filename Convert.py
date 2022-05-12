@@ -79,7 +79,7 @@ class convert:
             'Cookie': cookie
         }
         response = r.get('https://b-api.facebook.com/method/auth.login', headers = headers)
-        if re.search('(EAAA\w+)', response.text).group(1)
+        if re.search('(EAAA\w+)', response.text)
         if len(find) == 0:
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
