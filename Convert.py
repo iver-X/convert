@@ -12,11 +12,17 @@ O = ('\x1b[1;96m')
 N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
 # Banner
-akss = '-'
-IP = requests.get('https://api.ipify.org').text
-jalan(' %s[ %sselamat Datang Om %s%s ]'%(N,H,r,N))
-print(' %s[%s•%s] Alamat IP kamu saat ini : %s'%(N,O,N,IP))
-(f"""      ㅤㅤㅤㅤㅤㅤㅤㅤ       {KUNING}[SELAMAT DATANG SAYANG]{KUNING}
+import random
+import sys
+import time
+def mengetik(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+#kecepatan mengetik
+        time.sleep(random.random() * 0.3)
+     mengetik('[SELAMAT\nDATANG\nSAYANG]')
+(f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
