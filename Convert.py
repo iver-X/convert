@@ -81,9 +81,8 @@ class convert:
         response = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
       if re.search('(EAAA)\w+', str(response.text)):
         if len(find) == 0:
-          print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
-{HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
+{HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
         else:
           for token in find:
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
