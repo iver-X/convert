@@ -23,8 +23,8 @@ class menu:
 banner()
 IP = requests.get('https://api.ipify.org').text
 jalan('[ selamat Datang Om  ]')
-jalan('[•] Alamat IP kamu saat ini : 'IP)
-jalan('[•] Kamu masuk pada         : 'waktu)
+jalan('IP')
+jalan('waktu')
 print()
 # Convert Cookie Ke Token
 class convert:
