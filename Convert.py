@@ -64,14 +64,13 @@ class convert:
         response = r.get('https://web.facebook.com/ads/manager/account_settings/account_billing/?_rdc=1&_rdr', headers = headers)
         find = re.findall('(EAAI\w+)', response.text)
         if len(find) == 0:
-          exit(f"{MERAH}!.{MERAH} Token tidak ditemukan")
+          masuk input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+{HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for token in find:
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
-     masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
   def __tiga__(self,cookie):
     try:
       with requests.Session() as r:
@@ -82,14 +81,13 @@ class convert:
         response = r.get('https://web.facebook.com/ads/manager/account_settings/account_billing/?_rdc=1&_rdr', headers = headers)
         find = re.findall('(EAAA\w+)', response.text)
         if len(find) == 0:
-          exit(f"{MERAH}!.{MERAH} Token tidak ditemukan")
+          masuk input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+{HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for token in find:
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
-    masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
   def __dua__(self,cookie):
     try:
       with requests.Session() as r:
@@ -100,7 +98,8 @@ class convert:
         respon = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
         find = re.findall('act=(.*?)&nav_source', respon.text)
         if len(find) == 0:
-          exit(f"{MERAH}!.{MERAH} Token tidak ditemukan")
+          masuk input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
+{HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for y in find:
             response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
@@ -108,8 +107,6 @@ class convert:
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
-     masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
 
 if __name__=='__main__':
   os.system('git pull');convert()
