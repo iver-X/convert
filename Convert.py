@@ -30,7 +30,7 @@ class convert:
 {HIJAU}[*]5.{BIRU} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
    """)
      masuk = input(f"{KUNING}?.{J} Choose :{HIJAU} ")
-    if masuk == '1' or masuk == '01':
+    elif masuk == '1' or masuk == '01':
       cookie = input(f"\n{HIJAU}?.{BIRU} Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__satu__(cookie)
