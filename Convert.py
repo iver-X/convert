@@ -57,7 +57,7 @@ class convert:
       exit('SELAMAT TINGGAL SAYANG')
     else:
       masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
+{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py')time.sleep(3);menu().main()
   def __satu__(self,cookie):
     try:
       with requests.Session() as r:
