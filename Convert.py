@@ -133,4 +133,4 @@ class convert:
 
 
 if __name__=='__main__':
-  os.system(git pull);convert()
+  os.system('git pull');convert()
