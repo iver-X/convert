@@ -133,4 +133,4 @@ class convert:
 
 
 if __name__=='__main__':
-  os.system('main');convert()
+  os.system();convert()
