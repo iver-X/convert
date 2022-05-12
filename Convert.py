@@ -78,8 +78,8 @@ class convert:
             'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
             'Cookie': cookie
         }
-        response = r.get('https://web.facebook.com/ads/manager/account_settings/account_billing/?_rdc=1&_rdr', headers = headers)
-        find = re.findall('(EAAA\w+)', response.text)
+        response = r.get('https://b-api.facebook.com/method/auth.login', headers = headers)
+        if re.search('(EAAA\w+)', response.text).group(1)
         if len(find) == 0:
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
