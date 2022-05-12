@@ -14,7 +14,12 @@ banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
 {HIJAU}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 #tanggal
-date|lolcat
+banner()
+IP = requests.get('https://api.ipify.org').text
+jalan(' %s[ %sselamat Datang Om %s%s ]'%(N,H,r,N))
+print(' %s[%s•%s] Alamat IP kamu saat ini : %s'%(N,O,N,IP))
+print(' %s[%s•%s] Kamu masuk pada         : %s'%(N,O,N,waktu))
+print()
 # Convert Cookie Ke Token
 class convert:
 
