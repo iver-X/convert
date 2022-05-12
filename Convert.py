@@ -32,7 +32,7 @@ def mengetik(s):
 #ubah angka 0.1 sesuai keinginan kamu
 #angka terkecil adalah yang paling cepat
 #angka terbesar adalah yang paling lambat
-mengetik('SELAMAT DATANG PARA PECUNDANG')
+mengetik('             {H}     SELAMAT DATANG PARA PECUNDANG')
 #lahha
 class convert:
 
@@ -129,6 +129,3 @@ class convert:
             print(f"\n{KUNING}{O}     [✓]Token Kamu :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
-
-if __name__=='__main__':
-  os.system('git pull');convert()
