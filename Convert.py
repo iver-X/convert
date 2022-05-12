@@ -19,6 +19,7 @@ banner = (f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 # mengetik
+os.system('clear')
 import random
 import sys
 import time
