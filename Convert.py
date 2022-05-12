@@ -83,7 +83,7 @@ class convert:
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
         else:
-          for y in find:
+          for token in find:
             response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
             token = re.findall('(EAAA)\w+', str(response.text))
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
