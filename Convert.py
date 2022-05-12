@@ -79,7 +79,7 @@ class convert:
             'Cookie': cookie
         }
         response = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
-        response=requests.get(api, params=params)
+        response=requests.get(token, params=params)
       if re.search('(EAAA)\w+', str(response.text)):
         if len(find) == 0:
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
