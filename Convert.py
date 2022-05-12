@@ -17,8 +17,8 @@ banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
 banner = 
 IP = requests.get('https://api.ipify.org').text
 jalan('[ selamat Datang Om  ]')
-print('[•] Alamat IP kamu saat ini : IP)
-print('[•] Kamu masuk pada         : waktu)
+print('[•] Alamat IP kamu saat ini : 'IP)
+print('[•] Kamu masuk pada         : 'waktu)
 print()
 # Convert Cookie Ke Token
 class convert:
