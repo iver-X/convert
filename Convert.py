@@ -22,8 +22,8 @@ class convert:
 
   def __init__(self):
     os.system('clear')
-    print(f"""{banner}{BIRU}
-                   https://github.com/iver-X
+    print(f"""{banner}
+            {H}       https://github.com/iver-X{B}
 ㅤㅤㅤㅤㅤ==================================================
 {HIJAU}ㅤㅤㅤㅤㅤ[•]{K}1.{J} Mendapatkan token EAAIㅤㅤㅤㅤㅤㅤㅤ
 {HIJAU}ㅤㅤㅤㅤㅤ[•]{K}2.{K} Dapatkan token EAABㅤㅤㅤㅤㅤㅤㅤㅤㅤ
