@@ -29,10 +29,8 @@ def mengetik(s):
         sys.stdout.flush()
 #kecepatan mengetik
         time.sleep(random.random() * 0.2)
-#ubah angka 0.1 sesuai keinginan kamu
-#angka terkecil adalah yang paling cepat
-#angka terbesar adalah yang paling lambat
-mengetik('                {KUNING}SELAMAT DATANG PARA PECUNDANG');os.system('clear')
+        {KUNING}
+mengetik('                  SELAMAT DATANG PARA PECUNDANG');os.system('clear')
 #lahha
 class convert:
 
