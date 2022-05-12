@@ -23,11 +23,11 @@ class convert:
   def __init__(self):
     os.system('clear')
     print(f"""{banner}
-{HIJAU}1.{BIRU} Mendapatkan token EAAI
-{HIJAU}2.{BIRU} Dapatkan token EAAB
-{HIJAU}3.{BIRU} Dapatkan token EAAA
-{HIJAU}4.{BIRU} Cara menggunakan
-{HIJAU}5.{BIRU} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
+{HIJAU}1.{J} Mendapatkan token EAAI
+{HIJAU}2.{J} Dapatkan token EAAB
+{HIJAU}3.{J} Dapatkan token EAAA
+{HIJAU}4.{J} Cara menggunakan
+{HIJAU}5.{J} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
    """)
     masuk = input(f"{KUNING}?.{U} Choose :{HIJAU} ")
     if masuk == '1' or masuk == '01':
