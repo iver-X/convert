@@ -2,20 +2,20 @@
 import requests, json, time, re, os
 
 # Warna
-KUNING = ('\x1b[1;93m')
-MERAH = ('\x1b[1;91m')
-HIJAU = ('\x1b[1;92m')
-PUTIH = ('\x1b[1;97m')
-BIRU  = ('\x1b[1;94m')
+K = KUNING = ('\x1b[1;93m')
+M = MERAH = ('\x1b[1;91m')
+H = HIJAU = ('\x1b[1;92m')
+P = PUTIH = ('\x1b[1;97m')
+B = BIRU  = ('\x1b[1;94m')
 U = ('\x1b[1;95m')
 O = ('\x1b[1;96m')
 N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
 # Banner
-banner = (f"""      ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ  {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
-{O}ㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
-{O}ㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
-{O}ㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
+banner = (f"""      ㅤㅤㅤㅤㅤㅤㅤㅤㅤ  {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
+{O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
+{O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
+{O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 # Convert Cookie Ke Token
 class convert:
@@ -24,11 +24,11 @@ class convert:
     os.system('clear')
     print(f"""{banner}{BIRU}
 ㅤㅤㅤㅤㅤ==================================================
-{HIJAU}ㅤㅤㅤㅤㅤ[•]1.{J} Mendapatkan token EAAIㅤㅤㅤㅤㅤㅤㅤ
-{HIJAU}ㅤㅤㅤㅤㅤ[•]2.{KUNING} Dapatkan token EAABㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-{HIJAU}ㅤㅤㅤㅤㅤ[•]3.{O} Dapatkan token EAAAㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-{HIJAU}ㅤㅤㅤㅤㅤ[•]4.{U} Cara menggunakanㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-{HIJAU}ㅤㅤㅤㅤㅤ[•]5.{J} Keluar {MERAH}(exit){MERAH}{BIRU}
+{HIJAU}ㅤㅤㅤㅤㅤ[•]{K}1.{J} Mendapatkan token EAAIㅤㅤㅤㅤㅤㅤㅤ
+{HIJAU}ㅤㅤㅤㅤㅤ[•]{K}2.{K} Dapatkan token EAABㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+{HIJAU}ㅤㅤㅤㅤㅤ[•]{K}3.{O} Dapatkan token EAAAㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+{HIJAU}ㅤㅤㅤㅤㅤ[•]{K}4.{U} Cara menggunakanㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+{HIJAU}ㅤㅤㅤㅤㅤ[•]{K}5.{J} Keluar {MERAH}(exit){MERAH}{BIRU}
 ㅤㅤㅤㅤㅤ==================================================
        """)
     masuk = input(f"{KUNING}?.{U} Choose :{HIJAU} ")
