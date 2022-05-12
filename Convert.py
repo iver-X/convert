@@ -7,25 +7,16 @@ MERAH = ('\x1b[1;91m')
 HIJAU = ('\x1b[1;92m')
 PUTIH = ('\x1b[1;97m')
 BIRU  = ('\x1b[1;94m')
+U = ('\x1b[1;95m')
+O = ('\x1b[1;96m')
+N = ('\x1b[0m')
+J = ('\033[38;2;255;127;0;1m')
 # Banner
 banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
-{HIJAU}╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
-{HIJAU}║  │ ││││└┐┌┘├┤ ├┬┘ │
-{HIJAU}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
+{O}╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
+{O}║  │ ││││└┐┌┘├┤ ├┬┘ │
+{O}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
-#tanggal
-class menu:
-
-           def __init__(self):
-               self.uid = []
-           def main(self):
-                 os.system('clear')
-banner = (response.text)
-IP = requests.get('https://api.ipify.org').text
-jalan('[ selamat Datang Om  ]')
-print("*ALAMAT IP KAMU SAAT INI:IP")
-print("*WAKTU KAMU MASUK       :waktu")
-print()
 # Convert Cookie Ke Token
 class convert:
 
@@ -38,23 +29,23 @@ class convert:
 {HIJAU}4.{BIRU} Cara menggunakan
 {HIJAU}5.{BIRU} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
    """)
-    masuk = input(f"{KUNING}?.{PUTIH} Choose :{HIJAU} ")
+    masuk = input(f"{KUNING}?.{U} Choose :{HIJAU} ")
     if masuk == '1' or masuk == '01':
-      cookie = input(f"\n{HIJAU}?.{PUTIH} Cookie :{KUNING} ")
+      cookie = input(f"\n{HIJAU}?.{U} Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__satu__(cookie)
       else:
         masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '2' or masuk == '02':
-      cookie = input(f"\n{HIJAU}?.{PUTIH} Cookie :{KUNING} ")
+      cookie = input(f"\n{HIJAU}?.{U} Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__dua__(cookie)
       else:
         masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '3' or masuk == '03':
-      cookie = input(f"\n{HIJAU}?.{PUTIH} Cookie :{KUNING} ")
+      cookie = input(f"\n{HIJAU}?.{U} Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__tiga__(cookie)
       else:
@@ -81,7 +72,7 @@ class convert:
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for token in find:
-            print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
+            print(f"\n{KUNING}?.{O} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
   def __tiga__(self,cookie):
@@ -98,7 +89,7 @@ class convert:
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
         else:
           for token in find:
-            print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
+            print(f"\n{KUNING}?.{O} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
   def __dua__(self,cookie):
@@ -117,7 +108,7 @@ class convert:
           for y in find:
             response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
             token = re.search('(EAAB\w+)', response.text).group(1)
-            print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
+            print(f"\n{KUNING}?.{O} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
 
