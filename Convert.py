@@ -11,7 +11,7 @@ U = ('\x1b[1;95m')
 O = ('\x1b[1;96m')
 N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
-# Banner
+# tulisan ketik
 import random
 import sys
 import time
@@ -20,9 +20,11 @@ def mengetik(s):
         sys.stdout.write(c)
         sys.stdout.flush()
 #kecepatan mengetik
-        time.sleep(random.random() * 0.3)
-     mengetik('[SELAMAT\nDATANG\nSAYANG]')
-(f"""
+        time.sleep(random.random() * 0.1)
+#mengetik
+     mengetik('[SELAMAT\nDATANG\nSAYANG]'):
+#banner
+banner = (f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
