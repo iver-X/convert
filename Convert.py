@@ -12,7 +12,10 @@ O = ('\x1b[1;96m')
 N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
 # Banner
-banner() IP = requests.get('https://api.ipify.org').text
+banner()
+IP = requests.get('https://api.ipify.org').text
+jalan(' %s[ %sselamat Datang Om %s%s ]'%(N,H,r,N))
+print(' %s[%s•%s] Alamat IP kamu saat ini : %s'%(N,O,N,IP))
 (f"""      ㅤㅤㅤㅤㅤㅤㅤㅤ       {KUNING}[SELAMAT DATANG SAYANG]{KUNING}
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
