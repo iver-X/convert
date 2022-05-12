@@ -48,9 +48,9 @@ class convert:
         masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '4' or masuk == '04':
-      print(f"{KUNING}?.{PUTIH} Anda akan diarahkan ke youtube...");time.sleep(3);os.system('xdg-open https://youtu.be/Xv0plMtS4Cw');exit()
+      print(f"{KUNING}?.{HIJAU} Anda akan diarahkan ke youtube...");time.sleep(2);os.system('xdg-open https://youtu.be/Xv0plMtS4Cw');os.system('python Convert.py')
     elif masuk == '5' or masuk == '05':
-      exit()
+      exit('{HIJAU}SELAMAT TINGGAL SAYANG')
     else:
       masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
