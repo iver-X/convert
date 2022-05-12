@@ -38,29 +38,29 @@ class convert:
       if 'c_user=' in str(cookie):
         self.__satu__(cookie)
       else:
-        masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
+        masuk = input(f'''{HIJAU}        JANGAN KOSONG GOBLOK!!!
+        {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '2' or masuk == '02':
       cookie = input(f"\n{HIJAU}{U}    [!]{O}masukan Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__dua__(cookie)
       else:
-        masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
+        masuk = input(f'''{HIJAU}        JANGAN KOSONG GOBLOK!!!
+        {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '3' or masuk == '03':
       cookie = input(f"\n{HIJAU}{U}     [!]{O}masukan Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
         self.__tiga__(cookie)
       else:
-        masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
+        masuk = input(f'''{HIJAU}        JANGAN KOSONG GOBLOK!!!
+        {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
     elif masuk == '4' or masuk == '04':
-      print(f"{KUNING}?.{HIJAU} Anda akan diarahkan ke youtube...");time.sleep(2);os.system('xdg-open https://youtube.com/channel/UCTuJ142jrkZxS_QnkttTMNQ');os.system('python Convert.py')
+      print(f"{KUNING}[!!!]{HIJAU}          Anda akan diarahkan ke youtube...");time.sleep(2);os.system('xdg-open https://youtube.com/channel/UCTuJ142jrkZxS_QnkttTMNQ');os.system('python Convert.py')
     elif masuk == '5' or masuk == '05':
       exit('SELAMAT TINGGAL SAYANG')
     else:
-      masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
-{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py')
+      masuk = input(f'''{HIJAU}        JANGAN KOSONG GOBLOK!!!
+        {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py')
   def __satu__(self,cookie):
     try:
       with requests.Session() as r:
