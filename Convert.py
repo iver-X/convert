@@ -20,7 +20,6 @@ class menu:
                self.uid = []
            def main(self):
                  os.system('clear')
-             try:
 banner()
 IP = requests.get('https://api.ipify.org').text
 jalan('[ selamat Datang Om  ]')
