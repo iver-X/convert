@@ -22,7 +22,7 @@ def mengetik(s):
 #kecepatan mengetik
         time.sleep(random.random() * 0.1)
 #mengetik
-     mengetik('SELAMAT\nDATANG\nSAYANG');print()
+     mengetik('SELAMAT\nDATANG\nSAYANG');print
 #banner
 banner = (f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
