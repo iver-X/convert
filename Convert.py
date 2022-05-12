@@ -18,8 +18,11 @@ banner = (f"""
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
 {O}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
-# mengetik
-os.system('clear')
+# Convert Cookie Ke Token
+class convert:
+
+  def __init__(self):
+    os.system('clear')
 import random
 import sys
 import time
@@ -33,11 +36,6 @@ def mengetik(s):
 #angka terkecil adalah yang paling cepat
 #angka terbesar adalah yang paling lambat
 mengetik('SELAMAT DATANG PARA PECUNDANG')
-# Convert Cookie Ke Token
-class convert:
-
-  def __init__(self):
-    os.system('clear')
     print(f"""{banner}
             {H}           https://github.com/iver-X{B}
 ㅤㅤㅤㅤㅤ==================================================
