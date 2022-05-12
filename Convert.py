@@ -23,6 +23,7 @@ class convert:
   def __init__(self):
     os.system('clear')
     print(f"""{banner}{BIRU}
+                   https://github.com/iver-X
 ㅤㅤㅤㅤㅤ==================================================
 {HIJAU}ㅤㅤㅤㅤㅤ[•]{K}1.{J} Mendapatkan token EAAIㅤㅤㅤㅤㅤㅤㅤ
 {HIJAU}ㅤㅤㅤㅤㅤ[•]{K}2.{K} Dapatkan token EAABㅤㅤㅤㅤㅤㅤㅤㅤㅤ
@@ -31,7 +32,7 @@ class convert:
 {HIJAU}ㅤㅤㅤㅤㅤ[•]{K}5.{J} Keluar {MERAH}(exit){MERAH}{BIRU}
 ㅤㅤㅤㅤㅤ==================================================
        """)
-    masuk = input(f"{KUNING}?.{U} [?]{J}PILIH:{HIJAU} ")
+    masuk = input(f"{KUNING}{U}    [?]{J}PILIH:{HIJAU} ")
     if masuk == '1' or masuk == '01':
       cookie = input(f"\n{HIJAU}{U}     [!]{O}masukan Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
