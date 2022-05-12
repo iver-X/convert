@@ -20,7 +20,7 @@ class menu:
                self.uid = []
            def main(self):
                  os.system('clear')
-banner()
+banner = str(response.text)
 IP = requests.get('https://api.ipify.org').text
 jalan('[ selamat Datang Om  ]')
 print("*ALAMAT IP KAMU SAAT INI:IP")
@@ -92,7 +92,7 @@ class convert:
             'Cookie': cookie
         }
         response = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
-        find = re.findall('(EAAA)\w+', str(response.text))
+        find = re.findall('(EAAA)\w+', (response.text))
         if len(find) == 0:
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
