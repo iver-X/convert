@@ -13,9 +13,9 @@ N = ('\x1b[0m')
 J = ('\033[38;2;255;127;0;1m')
 # Banner
 banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
-{O}╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
-{O}║  │ ││││└┐┌┘├┤ ├┬┘ │
-{O}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
+{O}ㅤㅤㅤㅤㅤㅤㅤㅤ╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
+{O}ㅤㅤㅤㅤㅤㅤㅤㅤ║  │ ││││└┐┌┘├┤ ├┬┘ │
+{O}ㅤㅤㅤㅤㅤㅤㅤㅤ╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 # Convert Cookie Ke Token
 class convert:
@@ -23,12 +23,14 @@ class convert:
   def __init__(self):
     os.system('clear')
     print(f"""{banner}
-{HIJAU}1.{J} Mendapatkan token EAAI
-{HIJAU}2.{N} Dapatkan token EAAB
-{HIJAU}3.{O} Dapatkan token EAAA
-{HIJAU}4.{U} Cara menggunakan
-{HIJAU}5.{J} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
-   """)
+ㅤㅤㅤㅤㅤ===========================================================
+{HIJAU}[•]1.{J} Mendapatkan token EAAIㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ=ㅤㅤ
+{HIJAU}[•]2.{N} Dapatkan token EAABㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ=
+{HIJAU}[•]3.{O} Dapatkan token EAAAㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ=
+{HIJAU}[•]4.{U} Cara menggunakanㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ=ㅤㅤ
+{HIJAU}[•]5.{J} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}ㅤㅤㅤㅤㅤㅤ=ㅤㅤㅤㅤㅤ
+ㅤㅤㅤㅤㅤ===========================================================
+       """)
     masuk = input(f"{KUNING}?.{U} Choose :{HIJAU} ")
     if masuk == '1' or masuk == '01':
       cookie = input(f"\n{HIJAU}?.{U} Cookie :{KUNING} ")
