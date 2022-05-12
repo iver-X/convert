@@ -50,7 +50,7 @@ class convert:
     elif masuk == '4' or masuk == '04':
       print(f"{KUNING}?.{HIJAU} Anda akan diarahkan ke youtube...");time.sleep(2);os.system('xdg-open https://youtu.be/Xv0plMtS4Cw');os.system('python Convert.py')
     elif masuk == '5' or masuk == '05':
-      exit('{HIJAU}SELAMAT TINGGAL SAYANG')
+      exit('SELAMAT TINGGAL SAYANG')
     else:
       masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
@@ -70,6 +70,8 @@ class convert:
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
+     masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
+{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
   def __tiga__(self,cookie):
     try:
       with requests.Session() as r:
@@ -86,6 +88,8 @@ class convert:
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
+    masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
+{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
   def __dua__(self,cookie):
     try:
       with requests.Session() as r:
@@ -104,6 +108,8 @@ class convert:
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
+     masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
+{HIJAU}TEKAN {MERAH}ENTER!!''');os.system('python Convert.py');print()
 
 if __name__=='__main__':
   os.system('git pull');convert()
