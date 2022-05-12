@@ -40,7 +40,7 @@ class convert:
     elif masuk == '3' or masuk == '03':
       cookie = input(f"\n{HIJAU}?.{PUTIH} Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
-        self.__dua__(cookie)
+        self.__tiga__(cookie)
       else:
         exit(f"{MERAH}!.{MERAH} Periksa cookienya")
     elif masuk == '4' or masuk == '04':
