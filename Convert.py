@@ -51,7 +51,7 @@ class convert:
     else:
       masuk = input(f'''{HIJAU}JANGAN KOSONG GOBLOK!!!
 {HIJAU}TEKAN{MERAH}ENTER!!''');os.system('python Convert.py')
-   if masuk == '0' or masuk =='00':
+       if masuk == '0' or masuk =='00':
          print()
   def __satu__(self,cookie):
     try:
