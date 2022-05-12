@@ -85,7 +85,6 @@ class convert:
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
         else:
           for token in find:
-            response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
