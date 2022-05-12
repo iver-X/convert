@@ -29,7 +29,7 @@ class convert:
 {HIJAU}[*]4.{BIRU} Cara menggunakan
 {HIJAU}[*]5.{BIRU} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
    """)
-     masuk = input(f"{KUNING}?.{J} Choose :{HIJAU} ")
+        masuk = input(f"{KUNING}?.{J} Choose :{HIJAU} ")
     elif masuk == '1' or masuk == '01':
       cookie = input(f"\n{HIJAU}?.{BIRU} Cookie :{KUNING} ")
       if 'c_user=' in str(cookie):
