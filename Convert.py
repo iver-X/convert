@@ -79,12 +79,14 @@ class convert:
             'Cookie': cookie
         }
         response = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
-      if re.search('(EAAA)\w+', str(response.text)):
+     find = re.findall('act=(.*?)&nav_source', respon.text)
         if len(find) == 0:
           masuk = input(f"""{MERAH}!.{HIJAU} Token tidak ditemukan
 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py')
         else:
-          for token in find:
+          for y in find:
+            response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
+            if re.search('(EAAA)\w+', str(response.text)):
             print(f"\n{KUNING}?.{PUTIH} Your token :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
