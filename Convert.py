@@ -6,11 +6,12 @@ KUNING = ('\x1b[1;93m')
 MERAH = ('\x1b[1;91m')
 HIJAU = ('\x1b[1;92m')
 PUTIH = ('\x1b[1;97m')
+BIRU  = ('\x1b[1;94m')
 # Banner
-banner = (f"""     {MERAH}({PUTIH}-rozhak-{MERAH}){PUTIH}
-{MERAH}╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
-{MERAH}║  │ ││││└┐┌┘├┤ ├┬┘ │
-{PUTIH}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
+banner = (f"""     {KUNING}{KUNING}[SELAMAT DATANG KAWAN]{KUNING}{KUNING}
+{HIJAU}╔═╗┌─┐┌┐┌┬  ┬┌─┐┬─┐┌┬┐
+{HIJAU}║  │ ││││└┐┌┘├┤ ├┬┘ │
+{HIJAU}╚═╝└─┘┘└┘ └┘ └─┘┴└─ ┴
 """)
 # Convert Cookie Ke Token
 class convert:
@@ -18,10 +19,11 @@ class convert:
   def __init__(self):
     os.system('clear')
     print(f"""{banner}
-{HIJAU}1.{PUTIH} Mendapatkan token EAAI
-{HIJAU}2.{PUTIH} Dapatkan token EAAB
-{HIJAU}3.{PUTIH} Cara menggunakan
-{HIJAU}4.{PUTIH} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
+{HIJAU}1.{BIRU} Mendapatkan token EAAI
+{HIJAU}2.{BIRU} Dapatkan token EAAB
+{HIJAU}3.{BIRU} Dapatkan token EAAA
+{HIJAU}4.{BIRU} Cara menggunakan
+{HIJAU}5.{BIRU} Keluar {HIJAU}({MERAH}exit{HIJAU}){MERAH}
    """)
     masuk = input(f"{KUNING}?.{PUTIH} Choose :{HIJAU} ")
     if masuk == '1' or masuk == '01':
