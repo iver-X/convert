@@ -109,11 +109,11 @@ class convert:
       exit(f"{MERAH}!.{MERAH} {e}")
   def __dua__(self,cookie):
     try:
-      with requests.Session() as r:
-	url = "https://business.facebook.com/business_locations"
-	head = {"user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
-	cok = {'cookie':cookie}
-	data = ses.get(url,headers=head,cookies=cok)
+      with requests.Session() as ses:
+        url = "https://business.facebook.com/business_locations"
+        head = {"user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
+        cok = {'cookie':cookie}
+        data = ses.get(url,headers=head,cookies=cok)
         find = re.findall('act=(.*?)&nav_source', data.text)
         if len(find) == 0:
           masuk = input(f"""    {MERAH}[×]{HIJAU} Token tidak ditemukan
