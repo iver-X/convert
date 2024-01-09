@@ -28,7 +28,7 @@ def mengetik(s):
         sys.stdout.write(c)
         sys.stdout.flush()
 #kecepatan mengetik
-        time.sleep(random.random() * 0.2)
+        time.sleep(random.random() * 0.1)
 {N};mengetik('                         SELAMAT DATANG PARA PECUNDANG');os.system('clear')
 #lahha
 class convert:
@@ -110,19 +110,18 @@ class convert:
   def __dua__(self,cookie):
     try:
       with requests.Session() as r:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36',
-            'Cookie': cookie
-        }
-        respon = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
-        find = re.findall('act=(.*?)&nav_source', respon.text)
+	url = "https://business.facebook.com/business_locations"
+	head = {"user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
+	cok = {'cookie':cookie}
+	data = ses.get(url,headers=head,cookies=cok)
+        find = re.findall('act=(.*?)&nav_source', data.text)
         if len(find) == 0:
           masuk = input(f"""    {MERAH}[×]{HIJAU} Token tidak ditemukan
                 {HIJAU}TEKAN {MERAH}ENTER!!""");os.system('python Convert.py');print()
         else:
           for y in find:
             response = r.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={y}&nav_source=no_referrer', headers = headers)
-            token = re.search('(EAAB\w+)', response.text).group(1)
+            token = re.search('(EAAG\w+)',data.text).group(1)
             print(f"\n{KUNING}{O}     [✓]Token Kamu :{HIJAU} {token}")
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
